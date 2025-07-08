@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchTerm.toLowerCase() === 'titi') {
+    if (searchTerm.toLowerCase() === 'Admin') {
       navigate('/admin');
       setSearchTerm('');
     }
