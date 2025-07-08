@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: escort-service-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://escort-service-backend.onrender.com/api
+      - key: VITE_WHATSAPP_NUMBER
+        value: +919306145339
+      - key: VITE_TELEGRAM_USERNAME
+        value: @escort_service
+      - key: VITE_PHONE_NUMBER
+        value: +919306145339
+      - key: VITE_EMAIL
+        value: contact@escortservice.com
